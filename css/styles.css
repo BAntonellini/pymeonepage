@@ -2,6 +2,10 @@ body {
 	font-family: Megrim;
 }
 
+.fp-tableCell {
+	display: block;
+}
+
 #onepage-header {
 	/*	display: table;*/
 	height: 100vh;
@@ -31,7 +35,9 @@ body {
 	max-width: 400px;
 }
 
-#ul-nav, #li-nav, #li-nav a{
+#ul-nav,
+#li-nav,
+#li-nav a {
 	display: inline-block;
 	text-decoration: none;
 	float: right;
@@ -71,102 +77,207 @@ body {
 }
 
 /*@media screen and (max-width: 1400px) {*/
-	#p-landing {
-		font-size: 5rem;
-		color: white;
-		margin-top: 2.5rem;
-		margin-bottom: 0;
-	}
 
-	#p-landing-segundo {
-		font-size: 6rem;
-		color: white;
-		margin-top: 24rem;
-		margin-bottom: 0;
-	}
-
-	#p-landing-renglon {
-		font-size: 6rem;
-		color: white;
-	}
-	
-
-/*}*/
-
-#img-pc {
-	padding: 0 0;
+#p-landing {
+	font-size: 5rem;
+	color: white;
+	margin-top: 2.5rem;
+	margin-bottom: 0;
 }
 
-#img-pc1 {
-	height: auto;
+#p-landing-segundo {
+	font-size: 6rem;
+	color: white;
+	margin-top: 24rem;
+	margin-bottom: 0;
 }
 
-#quehacemos-izq {
-	float: none;
-	display: table-cell;
-	padding: 0 0;
+#p-landing-renglon {
+	font-size: 6rem;
+	color: white;
 }
 
-#quehacemos-der {
-	float: none;
-	display: table-cell;
-	padding: 0 0;
+.text {
+	background-color: rgba(201, 92, 26, 0.2);
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
 }
 
-.containerimg {
-	overflow: hidden;
-}
-
-.containerimg img{
+.parent {
+	margin-left: 0px !important;
+	margin-right: 0px !important;
 	position: relative;
-	transition: all .5s ease-in-out;
-	border: 1px solid black;
-
+	max-width: 100vw;
+	top: 0;
+	left: 0;
+	background-color: #0071bc;
+	overflow: hidden !important;
 }
 
-.containerimg img:hover {
+.imagen-frente {
+	max-width: 100vw !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.imagen-fondo {
+	max-width: 100vw !important;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+#quehacemos {
+	height: 100vh !important;
+	min-width: 100vw !important;
+	z-index: -999 !important;
+}
+
+#parent1 {
+	z-index: 3 !important;
+}
+
+#parent2 {
+	z-index: 2 !important;
+}
+
+#parent3 {
+	z-index: 1 !important;
+}
+
+#parent3 .imagen-fondo {
+	z-index: -887;
+}
+
+#parent3 .imagen-frente {
+	z-index: -886;
+}
+
+.zoomedblur {
 	transform: scale(1.3);
 	transform-origin: 50% 50%;
 	-webkit-filter: blur(2px);
 }
 
-#footer-img2 {
-	width: 100%;
-	height: 50px;
-	position: absolute;
-	z-index: 1000;
-	bottom: 0;
-
+.unzoomed {
+	transform: scale(1);
+	transform-origin: 50% 50%;
+	transition: .4s linear;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-/*  height: 100%;
-  width: 100%;*/
-  opacity: 1;
-  transition: .5s ease;
-  background-color: #008CBA;
+.zoomed {
+	transform: scale(1.05);
+	transform-origin: 50% 50%;
+	transition: .4s linear;
 }
 
-.container:hover .overlay {
- 
+#img-planesdeservicio {
+	position: relative;
+	-webkit-animation: breathing 2s ease-out infinite normal;
+	animation: breathing 2s ease-out infinite normal;
+	z-index: 10;
 }
 
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+.fila-servicios {
+	margin-bottom: 3em;
 }
 
-div#imagen2 .overlay {
-	height: 50% !important;
+.icono-servicio {
+	max-width: 150px;
+}
+
+/* FOOTER / QUIENES SOMOS */
+
+#about-megatech {
+	width: 100vw;
+	max-width: 100vw;
+	height: 90vh;
+	max-height: 90vh;
+	background-color: #3b3b3b;
+}
+
+.textoinstitucional {
+	color: white;
+	font-size: 2.75rem;
+}
+
+#row-institucional {
+	margin-top: 3em;
+}
+
+#somos {
+	margin-left: -3em;;
+}
+
+.vertical-align {
+	display: flex;
+	align-items: center;
+}
+
+#wrapper-aboutus {
+	margin-top: 3em;
+}
+
+#texto-aboutus {
+	font-size: 2rem;
+	color: white;
+	text-align: right;
+	margin-top: 3rem;
+}
+
+#wrapper-contacto {
+	background-color: #888;
+}
+
+#contactenos {
+	color: white;
+}
+
+@-webkit-keyframes breathing {
+	0% {
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+	25% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+	60% {
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+	100% {
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+}
+
+@keyframes breathing {
+	0% {
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+	25% {
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+	}
+	60% {
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+	100% {
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		transform: scale(0.9);
+	}
 }
