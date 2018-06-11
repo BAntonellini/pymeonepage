@@ -1,0 +1,64 @@
+var alturaPag = $('section#quehacemos').css('height')
+
+alturaPag
+"672px"
+var alturaImagen = $('#imagen-frente').css('height')
+
+alturaImagen
+
+var alturaImagen = document.getElementById('imagen-frente').css('height')
+VM9346:1 Uncaught TypeError: Cannot read property 'css' of null
+    at <anonymous>:1:60
+(anonymous) @ VM9346:1
+var alturaImagen = $('.imagen-frente').css('height')
+
+alturaImagen
+"302.563px"
+var alturaInt = parseInt(alturaPag);
+
+alturaInt
+672
+var alturaFinal = alturaInt / 3
+
+alturaFinal
+224
+var alturaImagenInt = parseInt(alturaImagen)
+
+alturaImagenInt
+302
+302 * 224 / 100
+676.48
+
+
+
+$('.imagen-frente').css('width')
+"1366px"
+var anchoImagen = $('.imagen-frente').css('width')
+undefined
+var anchoImagenInt = parseInt(anchoImagen)
+undefined
+anchoImagenInt
+1366
+var diferencialAltura = 100 - 74
+undefined
+diferencialAltura
+26
+var anchoFinal = anchoImagenInt * (diferencialAltura / 100);
+undefined
+anchoFinal
+355.16
+anchoFinal = (anchoImagenInt * diferencialAltura) / 100
+355.16
+anchoFinal = (anchoImagenInt * 100) / diferencialAltura
+5253.846153846154
+anchoFinal = anchoImagenInt * 0.26
+355.16
+var anchoDefinitivo = anchoImagenInt / anchoFinal
+undefined
+anchoDefinitivo
+3.846153846153846
+var anchoDefinitivo = anchoImagenInt - anchoFinal
+undefined
+anchoDefinitivo
+1010.8399999999999
+$('.parent, .imagen-frente, .imagen-fondo').css('width', anchoDefinitivo)

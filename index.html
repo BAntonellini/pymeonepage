@@ -6,97 +6,100 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Los 3 TAGs de arriba deben SIEMPRE ir primero, el resto abajo de esta linea -->
+
 	<!-- Bootstrap Core -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<!-- Custom CSS -->
-
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
-	    rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
-	    rel='stylesheet' type='text/css'>
+	 rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700" rel="stylesheet">
 	<!-- Fontawesome glyphs -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
-	    crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+	 crossorigin="anonymous">
 	<!-- jQuery fullPage.js -->
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
+	<!-- Animate.CSS -->
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<!-- Morphtext.CSS -->
+	<link rel="stylesheet" type="text/css" href="css/morphext.css">
 	<!-- Styles custom -->
-	<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<title></title>
 </head>
 
 <body>
 	<div id="fullpage">
-		<div class="section">
+		<div class="section" data-anchor="seccion0">
 			<header class="" id="onepage-header">
 				<div class="container-fluid">
 					<div class="row" id="fila-nav">
 						<div class="container">
 							<img id="logo-mega-nav" class="img-responsive" src="img/logomega.png" alt="Logo Megatech SA">
-							<ul id="ul-nav">
-								<li id="li-nav">
-									<a href="#quienessomos">QUIÉN</a>
-								</li>
-								<li id="li-nav">
-									<a href="#comohacemos">CÓMO</a>
-								</li>
-								<li id="li-nav">
-									<a href="#quehacemos">QUÉ</a>
-								</li>
-							</ul>
+							<nav id="wrapper-navegacion">
+								<ul id="ul-nav">
+									<li id="li-nav">
+										<a href="#seccion1">QUÉ</a>
+									</li>
+									<li id="li-nav">
+										<a href="#seccion2">CÓMO</a>
+									</li>
+									<li id="li-nav">
+										<a href="#seccion3">QUIÉN</a>
+									</li>
+								</ul>
+							</nav>
 						</div>
 					</div>
-					<div class="row text-center">
+					<div class="row text-center" id="fila-logo-mega-blanco">
 						<!-- <div class="col-lg-4"></div>
 				<div class="col-lg-4"> -->
 						<img class="img-responsive" id="logo-mega-blanco" src="img/LOGOFINAL blanco.png">
 						<!-- </div> -->
 						<!-- <div class="col-lg-4"></div> -->
 					</div>
-					<div class="row text-center">
+					<div class="row text-center" id="primer-texto">
 						<p id="p-landing">La empresa
 							<span style="font-weight: bold;">lider</span> en servicios IT</p>
 					</div>
-					<div class="row text-center">
+					<div class="row text-center" id="segundo-texto">
 						<div class="col-xs-12">
 							<p id="p-landing-segundo">Le ofrecemos las mejores soluciones </p>
 							<p id="p-landing-renglon">de integración para su negocio</p>
 						</div>
 					</div>
 					<div class="row text-center" id="fila-flecha">
-						<a href="#quehacemos">
-							<i id="p-landing" class="fas fa-arrow-down"></i>
-						</a>
+						<a id="flechita" href="#seccion1">&#8595;</a>
 					</div>
 				</div>
 			</header>
 		</div>
 
-		<div class="section">
-			<section id="quehacemos">
+		<div class="section" data-anchor="seccion1">
+			<!-- <div class="container-fluid" id="wrapper-banners"> -->
+			<section id="quehacemos" class="">
 				<div id="wrapper-banners">
 					<div class="row parent" id="parent1">
-						<img class="img-responsive imagen-fondo" src="img/banners/Banner OKI IMG.jpg" />
-						<img class="img-responsive imagen-frente" src="img/banners/Banner OKI.png" />
+						<img class="img-responsive imagen-fondo" src="img/banners/Banner OKI IMG.JPG" />
+						<img class="img-responsive imagen-frente" src="img/banners/Banner OKI.PNG" />
 					</div>
 					<div class="row parent" id="parent2">
-						<img class="img-responsive imagen-fondo" src="img/banners/Banner Lenovo IMG.jpg" />
+						<img class="img-responsive imagen-fondo" src="img/banners/Banner Lenovo IMG.JPG" />
 						<img class="img-responsive imagen-frente" src="img/banners/Banner Lenovo.png" />
 					</div>
 					<div class="row parent" id="parent3">
-						<img class="img-responsive imagen-fondo" src="img/banners/Banner Pymes IMG.jpg" />
+						<img class="img-responsive imagen-fondo" src="img/banners/Banner Pymes IMG.JPG" />
 						<img class="img-responsive imagen-frente" src="img/banners/Banner Pymes.png" />
 					</div>
 				</div>
 			</section>
+			<!-- </div> -->
 		</div>
 
 
-		<div class="section">
-			<section id="comohacemos">
-				<div class="container-fluid">
+		<div class="section" data-anchor="seccion2">
+			<div class="container" id="container-servicios">
+				<section id="comohacemos">
 					<div class="text-center" id="wrapper-planesdeservicio">
 						<img src="img/planesdeservicio.png" alt="Planes de servicio Megatech" id="img-planesdeservicio">
 					</div>
@@ -104,22 +107,22 @@
 						<!-- INICIO FILA 1 SERVICIOS -->
 						<div class="row text-center fila-servicios" id="fila-servicios-1">
 							<div class="col-md-3">
-								<a>
+								<a href="servicios/soporte-pymes.html">
 									<img class="icono-servicio" id="icono-servicio-1" src="img/iconos/SOPORTE PYMES.png">
 								</a>
 							</div>
 							<div class="col-md-3">
-								<a>
+								<a href="servicios/costo-por-copia.html">
 									<img class="icono-servicio" id="icono-servicio-2" src="img/iconos/COSTO POR COPIA.png">
 								</a>
 							</div>
 							<div class="col-md-3">
-								<a>
+								<a href="servicios/costo-por-servicio.html">
 									<img class="icono-servicio" id="icono-servicio-3" src="img/iconos/COSTO POR SERVICIO.png">
 								</a>
 							</div>
 							<div class="col-md-3">
-								<a>
+								<a href="servicios/migracion-nube.html">
 									<img class="icono-servicio" id="icono-servicio-4" src="img/iconos/MIGRACION NUBE.png">
 								</a>
 							</div>
@@ -127,22 +130,22 @@
 						<!-- INICIO FILA 2 SERVICIOS -->
 						<div class="row text-center fila-servicios" id="fila-servicios-2">
 							<div class="col-md-3">
-								<a>
+								<a href="servicios/consultoria-it.html">
 									<img class="icono-servicio" id="icono-servicio-5" src="img/iconos/CONSULTORIA IT.png">
 								</a>
 							</div>
 							<div class="col-md-3">
-								<a>
+								<a href="servicios/impresoras-3d.html">
 									<img class="icono-servicio" id="icono-servicio-6" src="img/iconos/IMPRESORAS 3D.png">
 								</a>
 							</div>
 							<div class="col-md-3">
-								<a>
+								<a href="servicios/desarrollo-web.html">
 									<img class="icono-servicio" id="icono-servicio-7" src="img/iconos/DESARROLLO WEB.png">
 								</a>
 							</div>
 							<div class="col-md-3">
-								<a>
+								<a href="servicios/aplicaciones-moviles.html">
 									<img class="icono-servicio" id="icono-servicio-8" src="img/iconos/APLICACIONES MOVILES.png">
 								</a>
 							</div>
@@ -150,76 +153,124 @@
 						<!-- INICIO FILA 3 SERVICIOS -->
 						<div class="row text-center fila-servicios" id="fila-servicios-3">
 							<div class="col-md-3">
-								<a>
+								<a href="servicios/soluciones-mobile.html">
 									<img class="icono-servicio" id="icono-servicio-9" src="img/iconos/SOLUCIONES MOBILE.png">
 								</a>
 							</div>
 							<div class="col-md-3">
-								<a>
+								<a href="servicios/radix-mdm.html">
 									<img class="icono-servicio" id="icono-servicio-10" src="img/iconos/RADIX MDM.png">
 								</a>
 							</div>
 							<div class="col-md-3">
-								<a>
+								<a href="servicios/radix-smartclass.html">
 									<img class="icono-servicio" id="icono-servicio-11" src="img/iconos/RADIX SMARTCLASS.png">
 								</a>
 							</div>
 							<div class="col-md-3">
-								<a>
+								<a href="servicios/contact-center.html">
 									<img class="icono-servicio" id="icono-servicio-12" src="img/iconos/CONTACT CENTER.png">
 								</a>
 							</div>
 						</div>
 					</div>
-
-				</div>
-			</section>
+				</section>
+			</div>
 		</div>
 
-		<div class="section">
+		<div class="section" data-anchor="seccion3">
 			<section id="quienessomos">
 				<div class="container-fluid" id="about-megatech">
-					<div class="row text-center vertical-align" id="row-institucional">
-						<div class="col-md-4" id="col-lm">
-							<img class="img-responsive" id="logomega-footer" src="img/logomega.png">
-						</div>
-						<div class="col-md-6 col-md-offset-2" id="col-ti">
-							<div id="wrapper-somos">
+					<div class="container" id="container-contacto">
+						<div class="row text-center vertical-align" id="row-institucional">
+							<div class="col-md-4 col-md-offset-1" id="col-lm">
+								<img class="img-responsive" id="logomega-footer" src="img/logomega.png">
+							</div>
+							<div class="col-md-2 col-md-offset-1 pull-right" id="col-ti">
+								<!-- <div id="wrapper-somos"> -->
 								<span class="textoinstitucional" id="somos">SOMOS</span>
-								<span class="textoinstitucional" id="adjetivo-megatech">PROFESIONALISMO</span>
+							</div>
+							<div class="col-md-2 pull-left">
+								<span class="textoinstitucional" id="adjetivos-mega">PROFESIONALISMO, INNOVACIÓN, COMPROMISO, EXCELENCIA</span>
+								<!-- </div> -->
 							</div>
 						</div>
-					</div>
-					<div id="wrapper-aboutus">
-						<div class="row">
-							<div class="col-sm-6 col-sm-offset-6">
-								<p id="texto-aboutus">Nuestra trayectoria de más de 20 años nos avala como referentes en el mercado.</p>
-								<p id="texto-aboutus">En nuestro site de Pymes, presentamos planes y soluciones que se ajustan a las necesidades de pequeñas y medianas
-									empresas
-								</p>
-								<p id="texto-aboutus">Nuestra casa matriz se encuentra en la Ciudad Autónoma de Buenos Aires y contamos con cobertura en todo el territorio
-									nacional.
-								</p>
+						<div id="wrapper-aboutus">
+							<div class="row">
+								<div class="col-sm-6 col-sm-offset-4">
+									<p id="texto-aboutus">Nuestra trayectoria de más de 20 años nos avala como referentes en el mercado.</p>
+									<p id="texto-aboutus">En nuestro site de Pymes, presentamos planes y soluciones que se ajustan a las necesidades de pequeñas y medianas
+										empresas
+									</p>
+									<p id="texto-aboutus">Nuestra casa matriz se encuentra en la Ciudad Autónoma de Buenos Aires y contamos con cobertura en todo el territorio
+										nacional.
+									</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="container">
-						<div class="text-center" id="wrapper-contacto">
-							<h2 id="contactenos">CONTÁCTENOS</h1>
-						</div>
-						<div class="" id="wrapper-formulario">
-							<form>
-								<input type="text" value=""
+
+						<div class="text-center" id="wrapper-formulario">
+							<h2 id="contactenos">CONTÁCTENOS</h2>
+							<form class="formulario-contacto" action="contacto.php" method="POST">
+								<div class="row text-center">
+									<div class="col-md-2"></div>
+									<div class="col-md-8">
+										<input class="inputs" id="input1" type="text" name="nombre" placeholder="Nombre y Apellido">
+										<input class="inputs" id="input2" type="email" name="email" placeholder="E-mail">
+										<input class="inputs" id="input3" type="tel" name="telefono" placeholder="Teléfono">
+									</div>
+								</div>
+								<div class="row text-center">
+									<div class="col-md-2"></div>
+									<div class="col-md-8">
+										<textarea id="textarea-cps" placeholder="Dejanos un mensaje"></textarea>
+									</div>
+								</div>
+								<div class="row text-center">
+									<div class="col-md-2"></div>
+									<div class="col-md-8">
+										<input type="submit" value="Consúltenos" id="submit-cps">
+									</div>
+								</div>
 							</form>
 						</div>
 					</div>
 				</div>
-				<div id="megatech-la">
-
+				<div class="container-fluid" id="megatech-la">
+					<div class="row text-center" id="wrapper-mega-la">
+						<div class="col-md-8 col-md-offset-2">
+							<a href="http://megatech.la" target="_blank">
+								<img id="imagen-mega-la" src="img/logomegala.png" class="img-responsive">
+							</a>
+						</div>
+						<div class="col-md-2">
+							<!-- <div id="wrapper-socialmedia"> -->
+							<ul id="lista-socialmedia">
+								<li class="item-socialmedia">
+									<a href="https://www.facebook.com/MegatechLA/" target="_blank">
+										<i class="fab fa-facebook-square icono-socialmedia"></i>
+									</a>
+								</li>
+								<li class="item-socialmedia">
+									<a href="https://ar.linkedin.com/company/mega-tech-s.a" target="_blank">
+										<i class="fab fa-instagram icono-socialmedia"></i>
+									</a>
+								</li>
+								<li class="item-socialmedia">
+									<a href="http://instagram.com/megatechla" target="_blank">
+										<i class="fab fa-linkedin icono-socialmedia"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- </div> -->
+						</a>
+					</div>
 				</div>
 			</section>
 		</div>
 	</div>
+
 
 
 
@@ -231,14 +282,23 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery-ui.js"></script>
 	<script src="js/bootstrap.js"></script>
+	<script src="js/scrolloverflow.min.js"></script>
 	<script src="js/jquery.fullPage.js"></script>
 	<script src="js/noframework.waypoints.min.js"></script>
-
 	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	<script src="js/morphext.min.js"></script>
 	<script src="js/custom.js"></script>
 
 
 
+	<script>
+		$("#adjetivos-mega").Morphext({
+			animation: "zoomIn", // Overrides default "bounceIn"
+			separator: ",", // Overrides default ","
+			speed: 2000, // Overrides default 2000
+			complete: function () { }
+		})
+	</script>
 </body>
 
 </html>

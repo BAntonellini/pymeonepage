@@ -1,39 +1,11 @@
 /* jQuery fullPage.js init */
-$(document).ready(function () {
-    $('#fullpage').fullpage();
+
+$('#fullpage').fullpage({
+    anchors: ['seccion0', 'seccion1', 'seccion2', 'seccion3'],
+    scrollOverflow: true,
+    scrollOverflowReset: false,
+	scrollOverflowOptions: null,
 });
-
-/* FUNCTION: MODIFY BANNER IMGS TO OCCUPY VIEWPORT HEIGHT */
-$(document).ready(function () {
-    let alturaSection = $('section#quehacemos').css('height');
-    let alturaSectionInt = parseInt(alturaSection);
-    let alturaFinal = alturaSectionInt / 3;
-
-    $('.parent').css('height', alturaFinal);
-    $('.imagen-frente').css('height', alturaFinal + 0.2);
-    $('.imagen-fondo').css('height', alturaFinal);
-}); // FUNCTION END
-
-/* Animated scrolling to sections */
-// handle links with @href started with '#' only
-$(document).on('click', '#li-nav a[href^="#"]', function (e) {
-    // target element id
-    var id = $(this).attr('href');
-    // target element
-    var $id = $(id);
-    if ($id.length === 0) {
-        return;
-    }
-    // prevent standard hash navigation (avoid blinking in IE)
-    /* e.preventDefault(); */
-    // top position relative to the document
-    var pos = $id.offset().top;
-    // animated top scrolling
-    $('body, html').animate({
-        scrollTop: pos
-    });
-});
-
 
 /* window.sr = ScrollReveal(); */
 var waypoint = new Waypoint({
@@ -92,15 +64,23 @@ $('#cont-comohacemos').click(function () {
     });
 });
 
-var padreServicios = $('section#comohacemos').parent();
+/* FUNCTION: MODIFY BANNER IMGS TO OCCUPY VIEWPORT HEIGHT */
+  $(document).ready(function () {
+    let anchoOriginalImg = parseInt($('.imagen-frente').css('width'));
+    let altoOriginalImg = parseInt($('.imagen-frente').css('height'));
+    let alturaSection = parseInt($('section#quehacemos').css('height'));
+    let alturaFinal = alturaSection / 3;
+    
 
-var waypoint2 = new Waypoint({    
-    element: padreServicios,
-    handler: function (direction) {
-        alert('Scrolled to waypoint!')
-    }
-})
+    var variacion = ((alturaFinal * 100) / altoOriginalImg) / 100;
+    let anchoFinal = anchoOriginalImg * variacion;
 
+    $('.parent').css('height', alturaFinal);
+    $('.imagen-frente').css('height', alturaFinal);
+    $('.imagen-fondo').css('height', alturaFinal);
 
+    $('.parent').css('width', anchoFinal);
+    $('.imagen-frente').css('width', anchoFinal);
+    $('.imagen-fondo').css('width', anchoFinal);
 
-
+}); // FUNCTION END

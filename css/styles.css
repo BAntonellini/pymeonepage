@@ -10,7 +10,7 @@ body {
 	/*	display: table;*/
 	height: 100vh;
 	/*width: 100;*/
-	min-height: 650px;
+	min-height: 100vh;
 	padding-top: 0;
 	padding-bottom: 0;
 	position: relative;
@@ -30,17 +30,24 @@ body {
 	max-height: 50px;
 }
 
+#fila-logo-mega-blanco {
+	margin-top: 7.5rem;
+}
+
 #logo-mega-blanco {
-	margin-top: 5rem;
 	max-width: 400px;
+}
+
+#wrapper-navegacion {
+	display: inline-block;
+	float: right;
 }
 
 #ul-nav,
 #li-nav,
 #li-nav a {
 	display: inline-block;
-	text-decoration: none;
-	float: right;
+	text-decoration: none;	
 	color: white;
 	font-size: 2.75rem;
 }
@@ -64,36 +71,31 @@ body {
 	margin-bottom: 0;
 }
 
-#p-landing-segundo {
-	font-size: 6rem;
-	color: white;
-	margin-top: 22rem;
-	margin-bottom: 0;
-}
-
 #p-landing-renglon {
-	font-size: 6rem;
+	font-size: 5rem;
 	color: white;
 }
 
 /*@media screen and (max-width: 1400px) {*/
 
-#p-landing {
-	font-size: 5rem;
-	color: white;
-	margin-top: 2.5rem;
-	margin-bottom: 0;
+#primer-texto {
+	margin-top: 7.5rem;
+}
+
+#segundo-texto {
+	margin-top: 7.5rem;
 }
 
 #p-landing-segundo {
-	font-size: 6rem;
+	font-size: 5rem;
 	color: white;
-	margin-top: 24rem;
-	margin-bottom: 0;
+	margin-top: 1.5em;
+	/* margin-top: 24rem; */
+	/* margin-bottom: 0; */
 }
 
 #p-landing-renglon {
-	font-size: 6rem;
+	font-size: 5rem;
 	color: white;
 }
 
@@ -109,34 +111,64 @@ body {
 	text-align: center;
 }
 
+#fila-flecha {
+	margin-top: 5rem;
+}
+
+#flechita {
+	font-size: 6rem;
+	color: white;
+}
+#flechita:hover, #flechita:focus, #flechita:active {
+	text-decoration: none;
+}
+
+#container-servicios,
+#container-contacto {
+	width: 75vw !important;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#wrapper-banners {
+	padding-left: 0;
+	height: 100vh !important;
+}
+
 .parent {
-	margin-left: 0px !important;
-	margin-right: 0px !important;
 	position: relative;
-	max-width: 100vw;
 	top: 0;
 	left: 0;
-	background-color: #0071bc;
+	background-color: #FFF;
 	overflow: hidden !important;
 }
 
+.img-responsive {
+	margin: 0 auto !important;
+}
+
 .imagen-frente {
-	max-width: 100vw !important;
 	position: absolute;
 	top: 0;
 	left: 0;
 }
 
 .imagen-fondo {
-	max-width: 100vw !important;
 	position: relative;
 	top: 0;
 	left: 0;
 }
 
+.parent {
+	margin: 0 auto !important;
+}
+.container-fluid {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
 #quehacemos {
 	height: 100vh !important;
-	min-width: 100vw !important;
 	z-index: -999 !important;
 }
 
@@ -178,15 +210,24 @@ body {
 	transition: .4s linear;
 }
 
+#container-servicios {
+	width: 75vw !important;
+}
+
 #img-planesdeservicio {
+	width: 350px !important;
 	position: relative;
 	-webkit-animation: breathing 2s ease-out infinite normal;
 	animation: breathing 2s ease-out infinite normal;
 	z-index: 10;
 }
 
+#wrapper-servicios {
+	margin-top: 5vh;
+}
+
 .fila-servicios {
-	margin-bottom: 3em;
+	margin-bottom: 2em;
 }
 
 .icono-servicio {
@@ -196,11 +237,15 @@ body {
 /* FOOTER / QUIENES SOMOS */
 
 #about-megatech {
-	width: 100vw;
+	
 	max-width: 100vw;
-	height: 90vh;
-	max-height: 90vh;
+	height: 95vh;
 	background-color: #3b3b3b;
+}
+
+#megatech-la,
+#megatech-la div.row {
+	max-height: 5vh !important;
 }
 
 .textoinstitucional {
@@ -209,11 +254,15 @@ body {
 }
 
 #row-institucional {
-	margin-top: 3em;
+	margin-top: 1em;
+}
+
+#adjetivos-mega {
+	float: left !important;
 }
 
 #somos {
-	margin-left: -3em;;
+	float: right !important;
 }
 
 .vertical-align {
@@ -222,23 +271,137 @@ body {
 }
 
 #wrapper-aboutus {
-	margin-top: 3em;
+	margin-top: 5em;
 }
 
 #texto-aboutus {
+	font-family: "IBM Plex Sans";
 	font-size: 2rem;
 	color: white;
 	text-align: right;
-	margin-top: 3rem;
+	/* margin-top: 3rem; */
 }
 
 #wrapper-contacto {
+	max-width: 61vw;
 	background-color: #888;
+	margin: 0 auto;
+}
+
+#wrapper-formulario {
+	margin-top: 5em;
+	padding-bottom: 2em !important;
 }
 
 #contactenos {
 	color: white;
 }
+
+form {
+
+	overflow: hidden;
+}
+
+.form-group {
+	margin-bottom: 0px !important;
+	margin-left: 1em;
+}
+
+/* .form-group input,
+textarea {
+	width: 54vw !important;
+	font-family: "IBM Plex Sans";
+	/* display: table-cell; 
+	display: inline-block !important;
+	float: right;
+} */
+
+.form-label {
+	font-family: "IBM Plex Sans";
+	font-weight: bold;
+	float: left !important;
+}
+
+
+input:focus,
+textarea:focus {
+	
+	border: none;
+}
+
+#imagen-mega-la {
+	max-height: 5vh !important;
+}
+
+#form-cps {
+    margin-top: 1.5em;
+}
+.inputs{
+	font-family: "IBM Plex Sans";
+	background-color: #3b3b3b; 
+    display: inline-block;
+    width: 30%;
+	border: 1px solid white;
+	color: white;
+}
+textarea {
+	font-family: "IBM Plex Sans";
+	vertical-align: top;
+	background-color: #3b3b3b;
+	border: 1px solid white !important;
+	color: white;
+}
+
+
+#input1 {
+    float: left !important;
+}
+#input3 {
+    float: right !important;
+}
+
+#textarea-cps {
+    float: left;
+    margin-top: 1em;
+    width: 100%;
+    height: 10em;
+    border: 1px solid black;
+}
+#submit-cps {
+	height: 30px;
+	font-size: 1.2em;
+    background-color: white;
+    color: black;
+    border: none;
+    margin-top: 1em;
+    width: 100%;
+    border-radius: 2%;
+	margin-bottom: 5em;
+	font-weight: bold;
+}
+#wrapper-mega-la {
+	margin-left: 0px !important;
+	margin-right: 0px !important
+}
+#wrapper-socialmedia {
+}
+#lista-socialmedia {
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 0.5em;
+}
+.item-socialmedia {
+	display: inline-block;
+}
+.icono-socialmedia {
+	font-size: 2.75em !important;
+	color: #3b3b3b;
+	margin-left: 10px;
+}
+.icono-socialmedia:hover {
+	color: rgb(201, 92, 26);
+}
+
 
 @-webkit-keyframes breathing {
 	0% {
@@ -279,5 +442,76 @@ body {
 		-webkit-transform: scale(0.9);
 		-ms-transform: scale(0.9);
 		transform: scale(0.9);
+	}
+}
+
+
+/*	QUERIES RESPONSIVENESS	*/
+@media only screen and (max-width: 1366px) {
+	#img-planesdeservicio{
+		max-width: 300px;
+	}
+	#fila-logo-mega-blanco{
+		margin-top: 3rem;
+	}
+
+	#primer-texto {
+		margin-top: 0px;
+	}
+    p#p-landing {
+		margin-top: 0px !important;
+	}
+	#p-landing-segundo {
+		margin-top: 0px;
+	}
+	.icono-servicio {
+		max-width: 125px;
+	}
+	#wrapper-aboutus{
+		margin-top: 1.5em;
+	}
+	#wrapper-formulario {
+		margin-top: 1em;
+	}
+	#texto-aboutus{
+		margin-bottom: 0px;
+		font-size: 1.5rem !important;
+	}
+	#row-institucional {
+		margin-top: 0.5rem;
+	}
+}
+
+@media only screen and (min-width: 1599px) {
+	#wrapper-planesdeservicio {
+		margin-top: 5em;
+	}
+	#texto-aboutus{
+		margin-bottom: 1em;
+	}
+	#wrapper-formulario {
+		margin-top: 7em;
+	}
+	.parent {
+		background-color: #FFF;
+		overflow: hidden !important;
+	}	
+	.imagen-frente {
+		width: auto !important;
+		min-width: 0 !important;
+	}	
+	.imagen-fondo {
+		width: auto !important;
+		min-width: 0 !important;
+	}	
+	#quehacemos {		
+		min-width: 0 !important;		
+	}
+	
+}
+
+@media only screen and (max-width: 571px) {
+	#wrapper-navegacion {
+		display: none;
 	}
 }
