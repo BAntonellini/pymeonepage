@@ -40,15 +40,7 @@ $(function () {
     });
 });
 
-$('div.juan').hover(function () {
-    $('#container-servicios button').remove();
-    $('#textos-comohacemos').fadeOut(500);
-    $('#container-servicios').animate({
-        width: "95vw",
-    }, 1000, function () {
-        $('.icono-servicio').fadeIn(400);
-    });
-});
+
 
 $('#cont-comohacemos').click(function () {
     var htmlBoton = '<button><i class="fas fa-angle-right" id="flecha-servicios"></i></button>';
@@ -84,3 +76,8 @@ $('#cont-comohacemos').click(function () {
     $('.imagen-fondo').css('width', anchoFinal);
 
 }); // FUNCTION END
+
+/* $(document).ready(function () {
+    var alturaSeccion = parseInt(('#fullpage > div.section.fp-section.fp-table.active.fp-completely > div').css('height'));
+    $('#fondo-section-servicios').css('height', alturaSeccion);
+}) */

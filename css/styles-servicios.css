@@ -96,6 +96,7 @@ hr {
 }
 #submit-cps {
     background-color: #333;
+    height: 25px;
     color: white;
     border: none;
     margin-top: 1em;
@@ -104,7 +105,7 @@ hr {
     margin-bottom: 5em;
 }
 
-
+/*  COSTO POR COPIA */
 #wrapper-barra-header-cpc{
     background-color: #e17f00;
 }
@@ -125,4 +126,131 @@ hr {
 }
 #wrapper-descripcion-cpc {
     background-color: #e17f00;    
+}
+#megatech-la,   
+#megatech-la div.row {
+	max-height: 5vh !important;
+}
+#imagen-mega-la {
+	max-height: 5vh !important;
+}
+#wrapper-mega-la {
+	margin-left: 0px !important;
+	margin-right: 0px !important
+}
+#wrapper-socialmedia {
+}
+#lista-socialmedia {
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 1em;
+}
+.item-socialmedia {
+    display: inline-block;
+    vertical-align: middle;
+}
+.icono-socialmedia {
+	font-size: 2em !important;
+	color: #3b3b3b;
+	margin-left: 10px;
+}
+.icono-socialmedia:hover {
+	color: rgb(201, 92, 26);
+}
+
+/*  SOPORTE PYMES */
+#wrapper-barra-header-sp{
+    background-color: #00709c;
+}
+.texto-landing-sp {
+    font-size: 3.5em;
+    color: #00709c;
+    line-height: 0.75em;
+    margin-top: 1vh;
+}
+#linea-landing-sp {
+    height: 2px;
+    background: #00709c;
+}
+#texto-linea-sp {
+    color: #00709c;
+    font-size: 2.25em;
+    margin-bottom: 1em;   
+}
+#wrapper-descripcion-sp {
+    background-color: #00709c;    
+}
+
+/* SOLUCIONES MOBILE */
+#wrapper-barra-header-sm {
+    background-color: #ff9e6e;
+}
+
+.texto-landing-sm {
+    font-size: 3.5em;
+    color: #ff9e6e;
+    line-height: 0.75em;
+    margin-top: 1vh;
+}
+
+#linea-landing-sm {
+    height: 2px;
+    background: #ff9e6e;
+}
+
+#wrapper-descripcion-sm {
+    background-color: #ff9e6e;
+}
+
+#icono-sm {
+    max-height: 75px;
+}
+
+/*  MIGRACION NUBE */
+
+#wrapper-barra-header-mn {
+    background-color: #29abe2;
+}
+
+.texto-landing-mn {
+    font-size: 3.5em;
+    color: #29abe2;
+    line-height: 0.75em;
+    margin-top: 1vh;
+}
+
+#linea-landing-mn {
+    height: 2px;
+    background: #29abe2;
+}
+
+#texto-linea-mn {
+    color: #29abe2;
+    font-size: 2.25em;
+    margin-bottom: 1em;
+}
+
+#wrapper-descripcion-mn {
+    background-color: #29abe2;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .texto-landing,
+    .texto-landing-cpc,
+    .texto-landing-sp,
+    .texto-landing-sm {
+        font-size: 2em;
+    }
+    #icono-cps {
+        max-width: 50px;
+    }
+    #texto-linea {
+        font-size: 1.5em;
+    }
+    #lista-socialmedia {
+        padding: 0;
+    }
 }
