@@ -235,13 +235,104 @@ hr {
 }
 
 
+/* CONSULTORIA IT */
+#wrapper-barra-header-ci {
+    background-color: #878787;
+}
 
+.texto-landing-ci {
+    font-size: 3.5em;
+    color: #878787;
+    line-height: 0.75em;
+    margin-top: 1vh;
+}
+
+#linea-landing-ci {
+    height: 2px;
+    background: #878787;
+}
+
+#texto-linea-ci {
+    color: #878787;
+    font-size: 2.25em;
+    margin-bottom: 1em;
+}
+
+#wrapper-descripcion-ci {
+    background-color: #878787;
+}
+
+/* CONTACT CENTER */
+
+#wrapper-barra-header-cc {
+    background-color: #ffc200;
+}
+
+.texto-landing-cc {
+    font-size: 3.5em;
+    color: #ffc200;
+    line-height: 0.75em;
+    margin-top: 1vh;
+}
+
+#linea-landing-cc {
+    height: 2px;
+    background: #ffc200;
+}
+
+#texto-linea-cc {
+    color: #ffc200;
+    font-size: 2.25em;
+    margin-bottom: 1em;
+}
+
+#wrapper-descripcion-cc {
+    background-color: #ffc200;
+}
+
+/* WEB DEVELOPMENT */
+
+#wrapper-barra-header-dw {
+    background-color: #662d91;
+}
+
+.texto-landing-dw {
+    font-size: 3.5em;
+    color: #662d91;
+    line-height: 0.75em;
+    margin-top: 1vh;
+}
+
+#linea-landing-dw {
+    height: 2px;
+    background: #662d91;
+}
+
+#texto-linea-dw {
+    color: #662d91;
+    font-size: 2.25em;
+    margin-bottom: 1em;
+}
+
+#wrapper-descripcion-dw {
+    background-color: #662d91;
+}
+
+@media only screen and (min-width: 1900px) {
+    #icono-cps {
+        margin-top: 50px;
+    }
+}
 
 @media only screen and (max-width: 600px) {
     .texto-landing,
     .texto-landing-cpc,
     .texto-landing-sp,
-    .texto-landing-sm {
+    .texto-landing-sm,
+    .texto-landing-ci,
+    .texto-landing-mn,
+    .texto-landing-cc,
+    .texto-landing-dw {
         font-size: 2em;
     }
     #icono-cps {
@@ -253,4 +344,43 @@ hr {
     #lista-socialmedia {
         padding: 0;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* EN CONSTRUCCION */
+#wrapper-construccion {
+    width: 100vw;
+    height: 100vh;
+    background-color: #3b3b3b;
+}
+#texto-construccion {
+    margin-top: 1.5em;
+    font-family: Megrim;
+    color: white;
+    font-size: 2em;
 }

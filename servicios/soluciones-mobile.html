@@ -2,11 +2,24 @@
 <html>
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116515417-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-116515417-1');
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Los 3 TAGs de arriba deben SIEMPRE ir primero, el resto abajo de esta linea -->
-
+    <meta name="description" content="Mediante tecnología aplicada a los dispositivos móviles del personal, optimice la gestión, seguimiento y control de sus Recursos Humanos">
+    <meta name="keywords" content="Gestión, Nomina, Distribuida, celulares, mobile, movil, gps, RRHH, control, fichaje">
     <!-- Bootstrap Core -->
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
     <!-- Fonts -->
@@ -25,7 +38,7 @@
     <link rel="stylesheet" type="text/css" href="../css/styles-servicios.css">
     <!-- FAVICON -->
     <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
-    <title></title>
+    <title>Soluciones móviles para gestión de RRHH</title>
 </head>
 
 <body>
@@ -81,7 +94,8 @@
             <p id="texto-contacto">Consúltenos por nuestros planes
                 <br>según las necesidades de su compañía</p>
         </div>
-        <form action="../contacto.php" method="POST" id="form-cps">
+        <form action="contacto.php" method="POST" id="form-cps">
+            <input id="inputPagina" name="pagina" type="hidden" value="Soluciones Mobile">
             <div class="row text-center">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
@@ -99,8 +113,8 @@
             <div class="row text-center">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
-                    <input type="submit" value="Consúltenos" id="submit-cps">
-                    </sp </div>
+                    <input type="submit" name="submit" value="Consúltenos" id="submit-cps">
+                </div>
 
         </form>
         </div>
@@ -138,7 +152,20 @@
 
 
 
-
+        <!-- CAROLAIN -->
+        <script type="text/javascript">
+            var vsid = "sa36561";
+            (function () {
+                var vsjs = document.createElement('script');
+                vsjs.type = 'text/javascript';
+                vsjs.async = true;
+                vsjs.setAttribute('defer', 'defer');
+                vsjs.src = ('https:' == document.location.protocol ? 'https://' : 'http://') +
+                    'www.virtualspirits.com/vsa/chat-' + vsid + '.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(vsjs, s);
+            })();
+        </script>
 
 
 

@@ -2,7 +2,6 @@
 <html>
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116515417-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -10,7 +9,10 @@
         function gtag() {
             dataLayer.push(arguments);
         }
+
         gtag('js', new Date());
+
+
 
         gtag('config', 'UA-116515417-1');
     </script>
@@ -18,8 +20,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Los 3 TAGs de arriba deben SIEMPRE ir primero, el resto abajo de esta linea -->
-    <meta name="description" content="Solucione todos sus problemas de impresión y digitalización. Olvídese de los insumos, fallas o incidentes. Sólo preocúpese de contar con papel.">
-    <meta name="keywords" content="costo por copia, impresión, digitalizacion, toner, insumos, scan, fotocopia">
+    <meta name="description" content="Contamos con años de experiencia, profesionales capacitados e infraestructura que nos permiten ofrecer servicios de consultoría e IT Corporativos de calidad">
+    <meta name="keywords" content="consultoria, asesoria, coaching, implementaciones, soluciones, servicios profesionales">
     <!-- Bootstrap Core -->
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
     <!-- Fonts -->
@@ -38,12 +40,12 @@
     <link rel="stylesheet" type="text/css" href="../css/styles-servicios.css">
     <!-- FAVICON -->
     <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
-    <title>Costo por copia</title>
+    <title>Servicios de consultoria IT</title>
 </head>
 
 <body>
     <div class="container-fluid" id="wrapper-landing-cpc">
-        <div class="row" id="wrapper-barra-header-cpc">
+        <div class="row" id="wrapper-barra-header-ci">
             <div class="col-sm-12">
                 <a href="../index.html">
                     <img src="../img/LOGOFINAL blanco.png" id="imagen-mega">
@@ -51,38 +53,38 @@
             </div>
         </div>
         <div class="row" id="wrapper-bg-image">
-            <img class="img-responsive" src="../img/banners/Banner Landing CPC.jpg">
+            <img class="img-responsive" src="../img/banners/Banner Landing ConsIT.JPG">
         </div>
     </div>
     <div class="container text-center" id="wrapper-texto-landing">
         <div class="row">
-            <img class="img-responsive" src="../img/iconos/Recurso 39.png" id="icono-cps">
-            <p class="texto-landing-cpc">Solo imprima</p>
-            <p class="texto-landing-cpc">Sin atascos. Sin fallas. Sin gastos.</p>
-            <hr id="linea-landing-cpc">
-            <p id="texto-linea-cpc">abono mensual</p>
+            <img class="img-responsive" src="../img/iconos/Icono IT Gris.png" id="icono-cps">
+            <p class="texto-landing-ci">Consultoría IT</p>
+            <p class="texto-landing-ci">Acompañamos a tu empresa</p>
+            <hr id="linea-landing-ci">
+            <p id="texto-linea-ci">&nbsp;</p>
         </div>
     </div>
-    <div class="container-fluid" id="wrapper-descripcion-cpc">
+    <div class="container-fluid" id="wrapper-descripcion-ci">
         <div class="container">
             <div class="row text-center" id="fila-descripcion">
                 <div class="col-sm-4 wrapper-col-cps">
-                    <img src="../img/iconos/Recurso 40.png" class="img-responsive icono-desc-cps">
-                    <p class="texto-descripcion">Equipo multifunción
-                        <br>de última generación
-                        <br> con consumibles (no incluye papel).</p>
+                    <img src="../img/iconos/Icono IT Blanco.png" class="img-responsive icono-desc-cps">
+                    <p class="texto-descripcion">Analizamos, asesoramos
+                        <br>y transformamos
+                        <br>en nuevas tecnologías</p>
                 </div>
                 <div class="col-sm-4 wrapper-col-cps">
-                    <img src="../img/iconos/Recurso 30.png" class="img-responsive icono-desc-cps">
-                    <p class="texto-descripcion">Soporte y
-                        <br> asistencia
-                        <br> para el uso.</p>
-                </div>
-                <div class="col-sm-4 wrapper-col-cps">
-                    <img src="../img/iconos/Recurso 31.png" class="img-responsive icono-desc-cps">
+                    <img src="../img/iconos/Icono Servidores.png" class="img-responsive icono-desc-cps">
                     <p class="texto-descripcion">Instalación,
-                        <br>puesta en marcha
-                        <br>y configuración incluidos</p>
+                        <br> virtualización y soporte
+                        <br> a servidores</p>
+                </div>
+                <div class="col-sm-4 wrapper-col-cps">
+                    <img src="../img/iconos/Icono UP.png" class="img-responsive icono-desc-cps">
+                    <p class="texto-descripcion">Gestión integral
+                        <br>de proyectos
+                        <br>informáticos</p>
                 </div>
             </div>
             <div class="row text-center">
@@ -96,13 +98,14 @@
                 <br>según las necesidades de su compañía</p>
         </div>
         <form action="contacto.php" method="POST" id="form-cps">
-            <input id="inputPagina" name="pagina" type="hidden" value="Costo por Copia">
+            <input id="inputPagina" name="pagina" type="hidden" value="Consultoria IT">
             <div class="row text-center">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <input class="inputs" id="input1" type="text" name="nombre" placeholder="Nombre y Apellido">
                     <input class="inputs" id="input2" type="email" name="email" placeholder="E-mail">
                     <input class="inputs" id="input3" type="tel" name="telefono" placeholder="Teléfono">
+                    <input type="hidden" name="pagina" value="<?php echo $some; ?>">
                 </div>
             </div>
             <div class="row text-center">
@@ -153,6 +156,7 @@
     </div>
 
 
+
     <!-- CAROLAIN -->
     <script type="text/javascript">
         var vsid = "sa36561";
@@ -167,7 +171,6 @@
             s.parentNode.insertBefore(vsjs, s);
         })();
     </script>
-
 
 
 

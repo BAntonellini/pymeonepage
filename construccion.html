@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Los 3 TAGs de arriba deben SIEMPRE ir primero, el resto abajo de esta linea -->
+
+    <!-- Bootstrap Core -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700" rel="stylesheet">
+    <!-- Fontawesome glyphs -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+    <!-- jQuery fullPage.js -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
+    <!-- Animate.CSS -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!-- Morphtext.CSS -->
+    <link rel="stylesheet" type="text/css" href="css/morphext.css">
+    <!-- Styles custom -->
+    <link rel="stylesheet" type="text/css" href="css/styles-servicios.css">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+    <title>Sitio en construccion</title>
+</head>
+
+<body>
+    <div id="wrapper-construccion">
+        <div class="container-fluid" id="wrapper-landing-cpc">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <a href="index.html">
+                        <img src="img/LOGOFINAL blanco.png" id="imagen-mega">
+                    </a>
+                    <p id="texto-construccion">
+                        esta pagina esta en proceso
+                        <br> dejanos tu consulta
+                        <br> gracias.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="wrapper-contacto">
+            <form action="contacto.php" method="POST" id="form-cps">
+                <div class="row text-center">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <input class="inputs" id="input1" type="text" name="nombre" placeholder="Nombre y Apellido">
+                        <input class="inputs" id="input2" type="email" name="email" placeholder="E-mail">
+                        <input class="inputs" id="input3" type="tel" name="telefono" placeholder="Teléfono">
+                        <input type="hidden" name="pagina" value="<?php echo $some; ?>">
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <textarea id="textarea-cps" placeholder="Dejanos un mensaje" name="comentario"></textarea>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <button name="submit" id="submit-cps">
+                            <span>Consúltenos</span>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <div class="container-fluid" id="megatech-la">
+            <div class="row text-center" id="wrapper-mega-la">
+                <div class="col-md-8 col-md-offset-2">
+                    <a href="http://megatech.la" target="_blank">
+                        <img id="imagen-mega-la" src="img/logomegala.png" class="img-responsive">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/jquery.fullPage.js"></script>
+    <script src="../js/noframework.waypoints.min.js"></script>
+    <script src="../https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="../js/morphext.min.js"></script>
+    <script src="../js/custom-servicios.js"></script>
+</body>
+
+</html>

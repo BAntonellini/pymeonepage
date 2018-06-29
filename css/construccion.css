@@ -1,0 +1,22 @@
+body {
+	font-family: Megrim !important;
+}
+#wrapper-construccion {
+    width: 100vw;
+    height: 100vh;
+    background-color: #3b3b3b;
+}
+#wrapper-logo {
+    max-height: 50px !important;
+}
+#logo-blanco {
+    max-height: 75px !important;
+}
+.img-responsive {
+    margin: 0 auto !important;
+}
+#texto {
+    margin-top: 2em;
+    font-size: 2.5em;
+    color: white;
+}

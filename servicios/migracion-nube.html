@@ -2,11 +2,24 @@
 <html>
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116515417-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-116515417-1');
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Los 3 TAGs de arriba deben SIEMPRE ir primero, el resto abajo de esta linea -->
-
+    <meta name="description" content="Deje de lado sus problemas actuales de infraestructura IT. Le ofrecemos migrar sus servicios a un entono Cloud. Gane en flexibilidad, tecnología y reduzca sus costos de mantenimiento.">
+    <meta name="keywords" content="cloud, nube, migracion, upload, implementacion, office, 365, google, azure">
     <!-- Bootstrap Core -->
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
     <!-- Fonts -->
@@ -25,7 +38,7 @@
     <link rel="stylesheet" type="text/css" href="../css/styles-servicios.css">
     <!-- FAVICON -->
     <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
-    <title></title>
+    <title>Migración Cloud</title>
 </head>
 
 <body>
@@ -38,7 +51,7 @@
             </div>
         </div>
         <div class="row" id="wrapper-bg-image">
-            <img class="img-responsive" src="../img/banners/Banner Landing Migracion.png">
+            <img class="img-responsive" src="../img/banners/Banner Landing Migracion.jpg">
         </div>
     </div>
     <div class="container text-center" id="wrapper-texto-landing">
@@ -47,20 +60,20 @@
             <p class="texto-landing-mn">Migración a la nube</p>
             <p class="texto-landing-mn">Flexibilidad, tecnología y seguridad</p>
             <hr id="linea-landing-mn">
-            <p id="texto-linea-mn">abono mensual</p>
+
         </div>
     </div>
     <div class="container-fluid" id="wrapper-descripcion-mn">
         <div class="container">
             <div class="row text-center" id="fila-descripcion">
                 <div class="col-sm-4 wrapper-col-cps">
-                    <img src="../img/iconos/Icono Migra 365.png" class="img-responsive icono-desc-cps">
+                    <img src="../img/iconos/Icono Migra Mail.png" class="img-responsive icono-desc-cps">
                     <p class="texto-descripcion">Migramos sus
                         <br>cuentas de correo
                         <br>Outlook y Exchange</p>
                 </div>
                 <div class="col-sm-4 wrapper-col-cps">
-                    <img src="../img/iconos/Icono Migra Mail.png" class="img-responsive icono-desc-cps">
+                    <img src="../img/iconos/Icono Migra 365.png" class="img-responsive icono-desc-cps">
                     <p class="texto-descripcion">Actualizamos las
                         <br> cuentas de mail
                         <br> a Office 365</p>
@@ -82,14 +95,14 @@
             <p id="texto-contacto">Consúltenos por nuestros planes
                 <br>según las necesidades de su compañía</p>
         </div>
-        <form action="../contacto.php" method="POST" id="form-cps">
+        <form action="contacto.php" method="POST" id="form-cps">
+            <input id="inputPagina" name="pagina" type="hidden" value="Migracion Nube">
             <div class="row text-center">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <input class="inputs" id="input1" type="text" name="nombre" placeholder="Nombre y Apellido">
                     <input class="inputs" id="input2" type="email" name="email" placeholder="E-mail">
                     <input class="inputs" id="input3" type="tel" name="telefono" placeholder="Teléfono">
-                    <input type="hidden" name="pagina" value="<?php echo $some; ?>">
                 </div>
             </div>
             <div class="row text-center">
@@ -101,8 +114,7 @@
             <div class="row text-center">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
-                    <button name="submit" id="submit-cps">
-                        <span>Consúltenos</span>
+                    <input type="submit" name="submit" value="Consúltenos" id="submit-cps">
                 </div>
             </div>
 
@@ -142,7 +154,20 @@
 
 
 
-
+    <!-- CAROLAIN -->
+    <script type="text/javascript">
+        var vsid = "sa36561";
+        (function () {
+            var vsjs = document.createElement('script');
+            vsjs.type = 'text/javascript';
+            vsjs.async = true;
+            vsjs.setAttribute('defer', 'defer');
+            vsjs.src = ('https:' == document.location.protocol ? 'https://' : 'http://') +
+                'www.virtualspirits.com/vsa/chat-' + vsid + '.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(vsjs, s);
+        })();
+    </script>
 
 
 
